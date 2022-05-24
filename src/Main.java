@@ -13,6 +13,9 @@ public class Main {
             Shop shop = new Shop("Магазин " + (i + 1), taxReport);
             shopList.add(shop);
             shopList.get(i).start();
+        }
+
+        for (int i = 0; i < SHOPS; i++) {
             shopList.get(i).join();
         }
 
